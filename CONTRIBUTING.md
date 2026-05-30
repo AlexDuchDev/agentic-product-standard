@@ -22,7 +22,7 @@ Especially welcome:
 1. **Cite primary sources.** "Anthropic says X" needs a link. Single-vendor benchmarks are directional, not ground truth — frame them that way (this is anti-pattern #12).
 2. **Prefer the boring, durable claim** over the exciting, fragile one. The standard tilts toward what survives the next model release.
 3. **Keep the standard and the skills in sync.** If you change a canon in `STANDARD.md`, update the matching `SKILL.md` so the guidance doesn't drift.
-4. **Don't add code templates.** The skill set teaches judgment, not boilerplate — framework-specific code rots fast and lives better in the framework's own docs.
+4. **Artifact-contracts yes, framework code no.** Framework-agnostic contracts and schemas belong in `templates/` (Agent/Tool Contract, message envelope, trace event, eval shapes) — they outlive any library. Framework-specific implementation code (a LangGraph graph, a CrewAI crew) rots fast and lives better in that framework's own docs; keep it out.
 5. **One topic per PR.** A vendor update and a new exemplar are two PRs.
 
 ## How to contribute

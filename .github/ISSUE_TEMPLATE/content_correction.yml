@@ -8,7 +8,10 @@ body:
       label: Where is the issue?
       options:
         - STANDARD.md
+        - AGENT_STANDARD.md
+        - templates/
         - skills/agentic-product-architect (master)
+        - skills/agent-builder
         - skills — architecture-design
         - skills — context-engineering
         - skills — harness-engineering

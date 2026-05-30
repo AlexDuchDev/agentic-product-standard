@@ -3,10 +3,16 @@
 All notable changes to The Agentic Product Standard are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased]
+## [1.1.0] — 2026-05-30
 
-### Removed
-- The Russian translation (`docs/STANDARD.ru.md`). The standard is now English-only.
+### Added
+- **[`AGENT_STANDARD.md`](AGENT_STANDARD.md)** — the single-agent operational standard: orchestrator plus eight sub-skills, Agent/Tool Contracts, runner flow, permission tiers (P0–P6), durable execution, the Definition of Done, and an Evidence & Sources appendix.
+- **`templates/`** — framework-agnostic artifact-contracts: Agent Contract, Tool Contract, input/output schemas (TS + Python), message envelope, handoff contract, context pack, trace event, eval case + judge-calibration shapes, and a drop-in `CLAUDE.md`.
+- **`agent-builder`** Claude Code skill — the single-agent track; reuses the ten existing sub-skills.
+
+### Changed
+- README now documents two tracks (build one agent / design a product); install copies both skills.
+- CONTRIBUTING now permits framework-agnostic artifact-contracts in `templates/` (framework-specific code still excluded).
 
 ## [1.0.0] — 2026-05-29
 
